@@ -1,9 +1,9 @@
 #TeX テンプレート
 ## ファイルの説明
-- preamble.sty
+- preamble.tex
   - 普段使っているTeXの設定(プリアンブル)が記述されています。
     「ホモメイドの TeX の設定だけ使わせろ！」という方がいましたら、
-    こちらを usepackage していただき、 documentclass の設定に 11pt を追加してください。
+    `\include{preamble}` と記述していただき、documentclass の設定に 11pt を追加してください。
 - root.tex
   - ファイル分割を考慮し、複数の TeX ファイルを用意しました。
     こちらのファイルが大元となるように input や include 等を記述してください。
