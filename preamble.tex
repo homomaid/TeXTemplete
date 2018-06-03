@@ -1,11 +1,31 @@
+% layout
 \setlength{\textwidth}{\fullwidth}
 \setlength{\textheight}{40\baselineskip}
 \addtolength{\textheight}{\topskip}
 \setlength{\voffset}{-0.2in}
 
+% margin of pages
+\usepackage[top=25truemm, bottom=25truemm, left=20truemm, right=20truemm]{geometry}
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1}
+
+% margin of headings
+\makeatletter
+\def\section{\@startsection {section}{1}{\z@}{-1.5ex plus -1ex minus -.2ex}{1.5 ex plus .2ex}{\large\textbf}}
+\def\subsection{\@startsection {subsection}{1}{\z@}{-1.5ex plus -1ex minus -.2ex}{1.5 ex plus .2ex}\textbf}
+\def\subsubsection{\@startsection {subsubsection}{1}{\z@}{-1.5ex plus -1ex minus -.2ex}{.3 ex plus .2ex}\textbf}
+\makeatother
+
+% fonts
+\usepackage{euler}
+\usepackage[hiragino-pro]{luatexja-preset}
+\setmainfont[Ligatures=TeX]{TeXGyreTermes}
+\setsansfont[Ligatures=TeX]{TeXGyreHeros}
+\setmonofont[StylisticSet=3]{Inconsolatazi4}
+
+% packages
 \usepackage{url}
 \usepackage{here}
-\usepackage{euler}
 \usepackage{ascmac}
 \usepackage{dcolumn}
 \usepackage{graphicx}
@@ -16,12 +36,7 @@
 \usepackage{threeparttable}
 \usepackage{amsmath,amssymb}
 
-\usepackage{mathpazo}
-\usepackage[hiragino-pro]{luatexja-preset}
-\setmainfont[Ligatures=TeX]{TeXGyreTermes}
-\setsansfont[Ligatures=TeX]{TeXGyreHeros}
-\setmonofont[StylisticSet=3]{Inconsolatazi4}
-
+% settings for listings environment
 \usepackage{listings}
 \renewcommand{\lstlistingname}{リスト}
 \lstset{
@@ -32,13 +47,3 @@
   numberstyle=\scriptsize\ttfamily,
   stepnumber=1
 }
-
-\usepackage[top=25truemm, bottom=25truemm, left=20truemm, right=20truemm]{geometry}
-\usepackage{setspace}
-\renewcommand{\baselinestretch}{1}
-
-\makeatletter
-\def\section{\@startsection {section}{1}{\z@}{-1.5ex plus -1ex minus -.2ex}{1.5 ex plus .2ex}{\large\textbf}}
-\def\subsection{\@startsection {subsection}{1}{\z@}{-1.5ex plus -1ex minus -.2ex}{1.5 ex plus .2ex}\textbf}
-\def\subsubsection{\@startsection {subsubsection}{1}{\z@}{-1.5ex plus -1ex minus -.2ex}{.3 ex plus .2ex}\textbf}
-\makeatother
