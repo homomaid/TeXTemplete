@@ -5,9 +5,9 @@
 \setlength{\voffset}{-0.2in}
 
 % margin of pages
-\usepackage[top=25truemm, bottom=25truemm, left=20truemm, right=20truemm]{geometry}
+\usepackage[top=20truemm, bottom=20truemm, left=20truemm, right=20truemm]{geometry}
 \usepackage{setspace}
-\renewcommand{\baselinestretch}{1}
+\renewcommand{\baselinestretch}{0.975}
 
 % margin of headings
 \makeatletter
@@ -40,12 +40,13 @@
 \usepackage{listings}
 \renewcommand{\lstlistingname}{リスト}
 \lstset{
-  basicstyle=\footnotesize\ttfamily,
+  basicstyle=\scriptsize\ttfamily,
   frame=leftline,
-  xleftmargin=12pt,
-  xrightmargin=12pt,
+  xleftmargin=14pt,
+  xrightmargin=14pt,
   breaklines=true,
   numbers=left,
-  numberstyle=\footnotesize\ttfamily,
+  numberstyle=\scriptsize\ttfamily,
   stepnumber=1,
+  % lineskip=-0.95\zw
 }
