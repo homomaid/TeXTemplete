@@ -16,7 +16,7 @@
 \usepackage{here}
 \usepackage{ascmac}
 \usepackage{dcolumn}
-\usepackage{graphicx}
+\usepackage[dvipdfmx]{graphicx}
 \usepackage{multirow}
 \usepackage{longtable}
 \usepackage[T1]{fontenc}
@@ -24,24 +24,20 @@
 \usepackage{threeparttable}
 \usepackage{amsmath,amssymb}
 
-% fonts
-\usepackage{euler}
-\usepackage[hiragino-pro]{luatexja-preset}
-\setmainfont[Ligatures=TeX]{Times New Roman}
-\setsansfont[Ligatures=TeX]{Helvetica}
-\setmonofont[StylisticSet=3]{Inconsolatazi4}
+% Font Settings
+\usepackage[dvipdfmx,ipaex]{pxchfon}
 
 % settings for listings environment
 \usepackage{listings}
 \renewcommand{\lstlistingname}{リスト}
 \lstset{
-  basicstyle=\scriptsize\ttfamily,
-  frame=leftline,
-  xleftmargin=14pt,
-  xrightmargin=14pt,
-  breaklines=true,
-  numbers=left,
-  numberstyle=\scriptsize\ttfamily,
-  stepnumber=1,
-  % lineskip=-0.95\zw
+    basicstyle=\scriptsize\ttfamily,
+    frame=leftline,
+    xleftmargin=14pt,
+    xrightmargin=14pt,
+    breaklines=true,
+    numbers=left,
+    numberstyle=\scriptsize\ttfamily,
+    stepnumber=1,
+    % lineskip=-0.95\zw
 }
